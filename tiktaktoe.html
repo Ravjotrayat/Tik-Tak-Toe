@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTakToe</title>
+    <style>
+        h1{
+           color: white;
+           font-family:'Arial Narrow Bold', sans-serif;
+           font-size: 60px ;
+        }
+        div{
+            color: aqua;
+           
+        }
+        #first{  flex: row ;
+
+        }
+        button{
+            height: 80px;
+            width: 80px;
+            border: 0px transparent;
+            border-radius: 50%;
+            margin: 4px;
+            padding: 4px;
+            color: black;
+            font-size: 35px;
+
+        }
+        .fa{
+            font-size: 45px;
+            color: black;
+        }
+        .reset{
+            padding: 8px;
+        }
+        .reset:hover{
+            opacity: 0.8;
+        }
+        #chance{
+           background-color: pink;
+           border-radius: 0%;
+           font-size: 25px;
+           font-family: cursive;
+            }
+        
+    </style>
+     <script src="tiktaktoe.js"></script>
+    
+</head>
+<body style="background-color: black;">
+    <center>
+        <h1><u>Tic Tac Toe</u></h1>
+        <div id="onebyone" style="color: white;">
+        <button id="chance" onclick="play()" style="width: 160px;">Play</button>
+        </div>
+        <div > 
+            <div >
+             <div > <br>
+                <div id="playagain"></div> 
+                    <table>
+                        <tr>
+                            <td colspan="3">  </td>
+                        </tr>
+                        <tr>
+                            <td ><button id="sq1" onclick="my_function('sq1')">-</button></td>
+                        
+                            <td ><button id="sq2" onclick="my_function('sq2')" >-</button></td>
+                    
+                            <td ><button id="sq3" onclick="my_function('sq3')" >-</button></td>
+                        </tr>
+
+                        <tr>
+                            <td ><button id="sq4" onclick="my_function('sq4')" >-</button></td>
+                        
+                            <td ><button id="sq5" onclick="my_function('sq5')" >-</button></td>
+    
+                            <td ><button id="sq6" onclick="my_function('sq6')" >-</button></td>
+                        </tr>
+
+                        <tr>
+                            <td ><button id="sq7" onclick="my_function('sq7')" >-</button></td>
+                        
+                            <td ><button id="sq8" onclick="my_function('sq8')" >-</button></td>
+                       
+                            <td ><button id="sq9" onclick="my_function('sq9')" >-</button></td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <input type="button" id="null" value="RESET" style="width: 120px ;height:25px;background-color:pink" onclick="reset()">
+                </center>
+                </div>
+                <div></div>
+            </div>
+        </div>
+   
+</body>
+</html>
