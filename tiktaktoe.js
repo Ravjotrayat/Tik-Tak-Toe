@@ -139,7 +139,7 @@ function my_function(ids)
          set();
         }
 
-         if(a1!='-'&&a2!='-'&&a3!='-'&&a4!='-'&&a5!='-'&&a6!='-'&&a7!='-'&&a8!='-'&&a9!='-')
+         if(a1!='-'&&a2!='-'&&a3!='-'&&a4!='-'&&a5!='-'&&a6!='-'&&a7!='-'&&a8!='-'&&a9!='-' && b!=1)
         {
         document.getElementById("chance").innerHTML="Matchdraw";
         
